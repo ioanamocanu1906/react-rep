@@ -27,6 +27,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
+    console.log("update");
     console.log(this.state.order);
     localStorage.setItem(
       this.props.match.params.storeId,
